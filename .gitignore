@@ -156,9 +156,6 @@ hardhat-error.log
 # Solidity compiler temporary files
 contracts/cache/
 
-# Generated verification files
-backend/verification/
-
 # IDE files
 .vscode/
 .idea/
