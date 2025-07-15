@@ -19,7 +19,7 @@
                 </svg>
                 <span class="headerText">Timed Locker</span>
             </div>
-            <a id="connect-button" class="connect-link" v-text="connectButtonText"></a>
+            <a id="connect-button" class="connect-link" v-text="connectButtonText" @click="connectToMetamask"></a>
         </div>
 
         <div class="ui container">
@@ -82,8 +82,10 @@
             <div class="help-text">
                 Note: You can use this UI to interact with the Timed Locker smart contract, which is deployed to the same address on multiple chains. Think of this app as a deposit safe where you can park some ETH with a time lock for yourself or someone else. You can only lock for others if they have designated you as a locker.
                 <br/><br/>
-                The contract address is <a :href="'https://etherscan.io/address/' + contract.address" target="_blank">{{ contract.address }}</a>.
-                <br/><br/>
+                <span v-if="contract">
+                    The contract address is <a :href="'https://etherscan.io/address/' + contract.address" target="_blank">{{ contract.address }}</a>.
+                    <br/><br/>
+                </span>
                 Supported networks: <b>Ethereum, Base, Arbitrum, Optimism, Polygon, and the Sepolia testnet</b>.
             </div>
         </div>

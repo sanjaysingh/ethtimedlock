@@ -49,9 +49,6 @@ const app = new Vue({
                     await this.refreshLockedValuesForBeneficiary();
                 }, 10000);
             }
-            document.getElementById('connect-button').addEventListener('click', async () => {
-                await this.connectToMetamask();
-            });
 
             $('.menu .item').tab();
         },
