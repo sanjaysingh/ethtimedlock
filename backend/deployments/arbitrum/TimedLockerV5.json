@@ -1,0 +1,301 @@
+{
+  "address": "0xD8030e62930876E8018502139e8F8cEfC38b2025",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "ReentrancyGuardReentrantCall",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "locker",
+          "type": "address"
+        }
+      ],
+      "name": "addDesignatedLocker",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "unlockTimestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "locker",
+          "type": "address"
+        }
+      ],
+      "name": "getLockedValuesByLocker",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "locker",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "beneficiary",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "unlockTimestamp",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct TimedLockerV5.Lock[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        }
+      ],
+      "name": "getLockedValuesForBeneficiary",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "locker",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "beneficiary",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "unlockTimestamp",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct TimedLockerV5.Lock[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "locker",
+          "type": "address"
+        }
+      ],
+      "name": "removeDesignatedLocker",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x0c295b91aa495d931aff75d23ef11a796d951794fabd7808f3e621ba04dc2589",
+  "receipt": {
+    "to": "0x4e59b44847b379578588920cA78FbF26c0B4956C",
+    "from": "0xb4d023C1ADE90A058a680685ADC4ACF0c445Ca82",
+    "contractAddress": null,
+    "transactionIndex": 2,
+    "gasUsed": "765639",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xfda11b21eb6c8b9d6e272a8b0159abfdb6b39318e24d4468af14454d5225fc93",
+    "transactionHash": "0x0c295b91aa495d931aff75d23ef11a796d951794fabd7808f3e621ba04dc2589",
+    "logs": [],
+    "blockNumber": 357800018,
+    "cumulativeGasUsed": "801450",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "30e713c2f6c1298bbbadf990bf4889a9",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"ReentrancyGuardReentrantCall\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"locker\",\"type\":\"address\"}],\"name\":\"addDesignatedLocker\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"unlockTimestamp\",\"type\":\"uint256\"}],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"locker\",\"type\":\"address\"}],\"name\":\"getLockedValuesByLocker\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"locker\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"unlockTimestamp\",\"type\":\"uint256\"}],\"internalType\":\"struct TimedLockerV5.Lock[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"}],\"name\":\"getLockedValuesForBeneficiary\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"locker\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"unlockTimestamp\",\"type\":\"uint256\"}],\"internalType\":\"struct TimedLockerV5.Lock[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"locker\",\"type\":\"address\"}],\"name\":\"removeDesignatedLocker\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"errors\":{\"ReentrancyGuardReentrantCall()\":[{\"details\":\"Unauthorized reentrant call.\"}]},\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/TimedLockerV5.sol\":\"TimedLockerV5\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/utils/ReentrancyGuard.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v5.1.0) (utils/ReentrancyGuard.sol)\\n\\npragma solidity ^0.8.20;\\n\\n/**\\n * @dev Contract module that helps prevent reentrant calls to a function.\\n *\\n * Inheriting from `ReentrancyGuard` will make the {nonReentrant} modifier\\n * available, which can be applied to functions to make sure there are no nested\\n * (reentrant) calls to them.\\n *\\n * Note that because there is a single `nonReentrant` guard, functions marked as\\n * `nonReentrant` may not call one another. This can be worked around by making\\n * those functions `private`, and then adding `external` `nonReentrant` entry\\n * points to them.\\n *\\n * TIP: If EIP-1153 (transient storage) is available on the chain you're deploying at,\\n * consider using {ReentrancyGuardTransient} instead.\\n *\\n * TIP: If you would like to learn more about reentrancy and alternative ways\\n * to protect against it, check out our blog post\\n * https://blog.openzeppelin.com/reentrancy-after-istanbul/[Reentrancy After Istanbul].\\n */\\nabstract contract ReentrancyGuard {\\n    // Booleans are more expensive than uint256 or any type that takes up a full\\n    // word because each write operation emits an extra SLOAD to first read the\\n    // slot's contents, replace the bits taken up by the boolean, and then write\\n    // back. This is the compiler's defense against contract upgrades and\\n    // pointer aliasing, and it cannot be disabled.\\n\\n    // The values being non-zero value makes deployment a bit more expensive,\\n    // but in exchange the refund on every call to nonReentrant will be lower in\\n    // amount. Since refunds are capped to a percentage of the total\\n    // transaction's gas, it is best to keep them low in cases like this one, to\\n    // increase the likelihood of the full refund coming into effect.\\n    uint256 private constant NOT_ENTERED = 1;\\n    uint256 private constant ENTERED = 2;\\n\\n    uint256 private _status;\\n\\n    /**\\n     * @dev Unauthorized reentrant call.\\n     */\\n    error ReentrancyGuardReentrantCall();\\n\\n    constructor() {\\n        _status = NOT_ENTERED;\\n    }\\n\\n    /**\\n     * @dev Prevents a contract from calling itself, directly or indirectly.\\n     * Calling a `nonReentrant` function from another `nonReentrant`\\n     * function is not supported. It is possible to prevent this from happening\\n     * by making the `nonReentrant` function external, and making it call a\\n     * `private` function that does the actual work.\\n     */\\n    modifier nonReentrant() {\\n        _nonReentrantBefore();\\n        _;\\n        _nonReentrantAfter();\\n    }\\n\\n    function _nonReentrantBefore() private {\\n        // On the first call to nonReentrant, _status will be NOT_ENTERED\\n        if (_status == ENTERED) {\\n            revert ReentrancyGuardReentrantCall();\\n        }\\n\\n        // Any calls to nonReentrant after this point will fail\\n        _status = ENTERED;\\n    }\\n\\n    function _nonReentrantAfter() private {\\n        // By storing the original value once again, a refund is triggered (see\\n        // https://eips.ethereum.org/EIPS/eip-2200)\\n        _status = NOT_ENTERED;\\n    }\\n\\n    /**\\n     * @dev Returns true if the reentrancy guard is currently set to \\\"entered\\\", which indicates there is a\\n     * `nonReentrant` function in the call stack.\\n     */\\n    function _reentrancyGuardEntered() internal view returns (bool) {\\n        return _status == ENTERED;\\n    }\\n}\\n\",\"keccak256\":\"0x11a5a79827df29e915a12740caf62fe21ebe27c08c9ae3e09abe9ee3ba3866d3\",\"license\":\"MIT\"},\"contracts/TimedLockerV5.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity ^0.8.20;\\r\\nimport \\\"@openzeppelin/contracts/utils/ReentrancyGuard.sol\\\";\\r\\n\\r\\ncontract TimedLockerV5 is ReentrancyGuard {\\r\\n    struct Lock {\\r\\n        address locker;\\r\\n        address beneficiary;\\r\\n        uint256 value;\\r\\n        uint256 unlockTimestamp;\\r\\n    }\\r\\n\\r\\n    mapping(address => mapping(address => bool)) private designatedLockers;\\r\\n    mapping(address => Lock[]) private lockedFundsByBeneficiary;\\r\\n    mapping(address => Lock[]) private lockedFundsByLocker;\\r\\n\\r\\n    // check if the given locker has been designated by the beneficiary. An address is always self-designated.\\r\\n    function isDesignatedLocker(address beneficiary, address locker) internal view returns (bool) {\\r\\n        return locker == beneficiary || designatedLockers[beneficiary][locker];\\r\\n    }\\r\\n\\r\\n    // Beneficiary should designate who can lock values for them. This allows to prevent spamming.\\r\\n    function addDesignatedLocker(address locker) external {\\r\\n        require(!designatedLockers[msg.sender][locker], \\\"Already a designated locker.\\\");\\r\\n        designatedLockers[msg.sender][locker] = true;\\r\\n    }\\r\\n\\r\\n    // remove given designnated locker\\r\\n    function removeDesignatedLocker(address locker) external {\\r\\n        require(designatedLockers[msg.sender][locker], \\\"Locker not found.\\\");\\r\\n        designatedLockers[msg.sender][locker] = false;\\r\\n    }\\r\\n\\r\\n    // lock ether for the given beneficiary and given timestamp\\r\\n    function deposit(address beneficiary, uint256 unlockTimestamp) external payable {\\r\\n        require(isDesignatedLocker(beneficiary, msg.sender), \\\"Not a designated locker.\\\");\\r\\n        require(unlockTimestamp > block.timestamp, \\\"Unlock timestamp must be in future.\\\");\\r\\n\\r\\n        Lock memory newLock = Lock(msg.sender, beneficiary, msg.value, unlockTimestamp);\\r\\n        lockedFundsByBeneficiary[beneficiary].push(newLock);\\r\\n        lockedFundsByLocker[msg.sender].push(newLock);\\r\\n    }\\r\\n\\r\\n    // withdraw all eligible values for the beneficiary (sender). Eligible value is one whose timestamp has reached\\r\\n    function withdraw() external nonReentrant {\\r\\n        Lock[] storage beneficiaryLocks = lockedFundsByBeneficiary[msg.sender];\\r\\n        uint256 totalEligibleValue = 0;\\r\\n        uint256 i = 0;\\r\\n\\r\\n        while (i < beneficiaryLocks.length) {\\r\\n            if (beneficiaryLocks[i].unlockTimestamp <= block.timestamp) {\\r\\n                totalEligibleValue += beneficiaryLocks[i].value;\\r\\n\\r\\n                // Remove lock from lockedFundsByLocker\\r\\n                Lock[] storage lockerLocks = lockedFundsByLocker[beneficiaryLocks[i].locker];\\r\\n                for (uint256 j = 0; j < lockerLocks.length; j++) {\\r\\n                    if (lockerLocks[j].beneficiary == msg.sender && lockerLocks[j].unlockTimestamp == beneficiaryLocks[i].unlockTimestamp) {\\r\\n                        lockerLocks[j] = lockerLocks[lockerLocks.length - 1];\\r\\n                        lockerLocks.pop();\\r\\n                        break;\\r\\n                    }\\r\\n                }\\r\\n\\r\\n                // Remove lock from lockedFundsByBeneficiary\\r\\n                beneficiaryLocks[i] = beneficiaryLocks[beneficiaryLocks.length - 1];\\r\\n                beneficiaryLocks.pop();\\r\\n            } else {\\r\\n                i++;\\r\\n            }\\r\\n        }\\r\\n\\r\\n        require(totalEligibleValue > 0, \\\"No eligible locked value to withdraw\\\");\\r\\n        payable(msg.sender).transfer(totalEligibleValue);\\r\\n    }\\r\\n\\r\\n    // get all locks by the given locker\\r\\n    function getLockedValuesByLocker(address locker) external view returns (Lock[] memory) {\\r\\n        return lockedFundsByLocker[locker];\\r\\n    }\\r\\n\\r\\n    // get all locks for the given beneficiary\\r\\n    function getLockedValuesForBeneficiary(address beneficiary) external view returns (Lock[] memory) {\\r\\n        return lockedFundsByBeneficiary[beneficiary];\\r\\n    }\\r\\n}\",\"keccak256\":\"0x717195c5718a790160f6f934a6be71c879efb2e69d1be822e02e6d8d51b935b0\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506001600055610bf0806100256000396000f3fe6080604052600436106100555760003560e01c806312ca98b51461005a5780633ccfd60b1461007c57806347e7ef2414610091578063d27e0930146100a4578063dd219563146100da578063e9166b4f146100fa575b600080fd5b34801561006657600080fd5b5061007a610075366004610a84565b61011a565b005b34801561008857600080fd5b5061007a6101c6565b61007a61009f366004610a9f565b6105b2565b3480156100b057600080fd5b506100c46100bf366004610a84565b61081d565b6040516100d19190610ac9565b60405180910390f35b3480156100e657600080fd5b506100c46100f5366004610a84565b6108c2565b34801561010657600080fd5b5061007a610115366004610a84565b610959565b3360009081526001602090815260408083206001600160a01b038516845290915290205460ff16156101935760405162461bcd60e51b815260206004820152601c60248201527f416c726561647920612064657369676e61746564206c6f636b65722e0000000060448201526064015b60405180910390fd5b3360009081526001602081815260408084206001600160a01b03959095168452939052919020805460ff19169091179055565b6101ce6109ee565b33600090815260026020526040812090805b825481101561051957428382815481106101fc576101fc610b39565b906000526020600020906004020160030154116105075782818154811061022557610225610b39565b906000526020600020906004020160020154826102429190610b65565b915060006003600085848154811061025c5761025c610b39565b600091825260208083206004909202909101546001600160a01b03168352820192909252604001812091505b815481101561041c57336001600160a01b03168282815481106102ad576102ad610b39565b60009182526020909120600160049092020101546001600160a01b031614801561031c57508483815481106102e4576102e4610b39565b90600052602060002090600402016003015482828154811061030857610308610b39565b906000526020600020906004020160030154145b1561040a578154829061033190600190610b78565b8154811061034157610341610b39565b906000526020600020906004020182828154811061036157610361610b39565b60009182526020909120825460049092020180546001600160a01b039283166001600160a01b03199182161782556001808501549083018054919094169116179091556002808301549082015560039182015491015581548290806103c8576103c8610b8b565b60008281526020812060046000199093019283020180546001600160a01b0319908116825560018201805490911690556002810182905560030155905561041c565b8061041481610ba1565b915050610288565b508354849061042d90600190610b78565b8154811061043d5761043d610b39565b906000526020600020906004020184838154811061045d5761045d610b39565b60009182526020909120825460049092020180546001600160a01b039283166001600160a01b03199182161782556001808501549083018054919094169116179091556002808301549082015560039182015491015583548490806104c4576104c4610b8b565b60008281526020812060046000199093019283020180546001600160a01b03199081168255600182018054909116905560028101829055600301559055506101e0565b8061051181610ba1565b9150506101e0565b600082116105755760405162461bcd60e51b8152602060048201526024808201527f4e6f20656c696769626c65206c6f636b65642076616c756520746f20776974686044820152636472617760e01b606482015260840161018a565b604051339083156108fc029084906000818181858888f193505050501580156105a2573d6000803e3d6000fd5b505050506105b06001600055565b565b6105bc8233610a18565b6106085760405162461bcd60e51b815260206004820152601860248201527f4e6f7420612064657369676e61746564206c6f636b65722e0000000000000000604482015260640161018a565b4281116106635760405162461bcd60e51b815260206004820152602360248201527f556e6c6f636b2074696d657374616d70206d75737420626520696e206675747560448201526239329760e91b606482015260840161018a565b60006040518060800160405280336001600160a01b03168152602001846001600160a01b0316815260200134815260200183815250905060026000846001600160a01b03166001600160a01b0316815260200190815260200160002081908060018154018082558091505060019003906000526020600020906004020160009091909190915060008201518160000160006101000a8154816001600160a01b0302191690836001600160a01b0316021790555060208201518160010160006101000a8154816001600160a01b0302191690836001600160a01b031602179055506040820151816002015560608201518160030155505060036000336001600160a01b03166001600160a01b0316815260200190815260200160002081908060018154018082558091505060019003906000526020600020906004020160009091909190915060008201518160000160006101000a8154816001600160a01b0302191690836001600160a01b0316021790555060208201518160010160006101000a8154816001600160a01b0302191690836001600160a01b0316021790555060408201518160020155606082015181600301555050505050565b6001600160a01b0381166000908152600260209081526040808320805482518185028101850190935280835260609492939192909184015b828210156108b7576000848152602090819020604080516080810182526004860290920180546001600160a01b039081168452600180830154909116848601526002820154928401929092526003015460608301529083529092019101610855565b505050509050919050565b6001600160a01b03811660009081526003602090815260408083208054825181850281018501909352808352606094929391929091840182156108b7576000848152602090819020604080516080810182526004860290920180546001600160a01b039081168452600180830154909116848601526002820154928401929092526003015460608301529083529092019101610855565b3360009081526001602090815260408083206001600160a01b038516845290915290205460ff166109c05760405162461bcd60e51b81526020600482015260116024820152702637b1b5b2b9103737ba103337bab7321760791b604482015260640161018a565b3360009081526001602090815260408083206001600160a01b0394909416835292905220805460ff19169055565b600260005403610a1157604051633ee5aeb560e01b815260040160405180910390fd5b6002600055565b6000826001600160a01b0316826001600160a01b03161480610a5f57506001600160a01b0380841660009081526001602090815260408083209386168352929052205460ff165b90505b92915050565b80356001600160a01b0381168114610a7f57600080fd5b919050565b600060208284031215610a9657600080fd5b610a5f82610a68565b60008060408385031215610ab257600080fd5b610abb83610a68565b946020939093013593505050565b602080825282518282018190526000919060409081850190868401855b82811015610b2c57815180516001600160a01b03908116865287820151168786015285810151868601526060908101519085015260809093019290850190600101610ae6565b5091979650505050505050565b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b80820180821115610a6257610a62610b4f565b81810381811115610a6257610a62610b4f565b634e487b7160e01b600052603160045260246000fd5b600060018201610bb357610bb3610b4f565b506001019056fea26469706673582212209387d7b9427a362beadae5cd71e072c4081724113b172b9da0c739a796b765e264736f6c63430008140033",
+  "deployedBytecode": "0x6080604052600436106100555760003560e01c806312ca98b51461005a5780633ccfd60b1461007c57806347e7ef2414610091578063d27e0930146100a4578063dd219563146100da578063e9166b4f146100fa575b600080fd5b34801561006657600080fd5b5061007a610075366004610a84565b61011a565b005b34801561008857600080fd5b5061007a6101c6565b61007a61009f366004610a9f565b6105b2565b3480156100b057600080fd5b506100c46100bf366004610a84565b61081d565b6040516100d19190610ac9565b60405180910390f35b3480156100e657600080fd5b506100c46100f5366004610a84565b6108c2565b34801561010657600080fd5b5061007a610115366004610a84565b610959565b3360009081526001602090815260408083206001600160a01b038516845290915290205460ff16156101935760405162461bcd60e51b815260206004820152601c60248201527f416c726561647920612064657369676e61746564206c6f636b65722e0000000060448201526064015b60405180910390fd5b3360009081526001602081815260408084206001600160a01b03959095168452939052919020805460ff19169091179055565b6101ce6109ee565b33600090815260026020526040812090805b825481101561051957428382815481106101fc576101fc610b39565b906000526020600020906004020160030154116105075782818154811061022557610225610b39565b906000526020600020906004020160020154826102429190610b65565b915060006003600085848154811061025c5761025c610b39565b600091825260208083206004909202909101546001600160a01b03168352820192909252604001812091505b815481101561041c57336001600160a01b03168282815481106102ad576102ad610b39565b60009182526020909120600160049092020101546001600160a01b031614801561031c57508483815481106102e4576102e4610b39565b90600052602060002090600402016003015482828154811061030857610308610b39565b906000526020600020906004020160030154145b1561040a578154829061033190600190610b78565b8154811061034157610341610b39565b906000526020600020906004020182828154811061036157610361610b39565b60009182526020909120825460049092020180546001600160a01b039283166001600160a01b03199182161782556001808501549083018054919094169116179091556002808301549082015560039182015491015581548290806103c8576103c8610b8b565b60008281526020812060046000199093019283020180546001600160a01b0319908116825560018201805490911690556002810182905560030155905561041c565b8061041481610ba1565b915050610288565b508354849061042d90600190610b78565b8154811061043d5761043d610b39565b906000526020600020906004020184838154811061045d5761045d610b39565b60009182526020909120825460049092020180546001600160a01b039283166001600160a01b03199182161782556001808501549083018054919094169116179091556002808301549082015560039182015491015583548490806104c4576104c4610b8b565b60008281526020812060046000199093019283020180546001600160a01b03199081168255600182018054909116905560028101829055600301559055506101e0565b8061051181610ba1565b9150506101e0565b600082116105755760405162461bcd60e51b8152602060048201526024808201527f4e6f20656c696769626c65206c6f636b65642076616c756520746f20776974686044820152636472617760e01b606482015260840161018a565b604051339083156108fc029084906000818181858888f193505050501580156105a2573d6000803e3d6000fd5b505050506105b06001600055565b565b6105bc8233610a18565b6106085760405162461bcd60e51b815260206004820152601860248201527f4e6f7420612064657369676e61746564206c6f636b65722e0000000000000000604482015260640161018a565b4281116106635760405162461bcd60e51b815260206004820152602360248201527f556e6c6f636b2074696d657374616d70206d75737420626520696e206675747560448201526239329760e91b606482015260840161018a565b60006040518060800160405280336001600160a01b03168152602001846001600160a01b0316815260200134815260200183815250905060026000846001600160a01b03166001600160a01b0316815260200190815260200160002081908060018154018082558091505060019003906000526020600020906004020160009091909190915060008201518160000160006101000a8154816001600160a01b0302191690836001600160a01b0316021790555060208201518160010160006101000a8154816001600160a01b0302191690836001600160a01b031602179055506040820151816002015560608201518160030155505060036000336001600160a01b03166001600160a01b0316815260200190815260200160002081908060018154018082558091505060019003906000526020600020906004020160009091909190915060008201518160000160006101000a8154816001600160a01b0302191690836001600160a01b0316021790555060208201518160010160006101000a8154816001600160a01b0302191690836001600160a01b0316021790555060408201518160020155606082015181600301555050505050565b6001600160a01b0381166000908152600260209081526040808320805482518185028101850190935280835260609492939192909184015b828210156108b7576000848152602090819020604080516080810182526004860290920180546001600160a01b039081168452600180830154909116848601526002820154928401929092526003015460608301529083529092019101610855565b505050509050919050565b6001600160a01b03811660009081526003602090815260408083208054825181850281018501909352808352606094929391929091840182156108b7576000848152602090819020604080516080810182526004860290920180546001600160a01b039081168452600180830154909116848601526002820154928401929092526003015460608301529083529092019101610855565b3360009081526001602090815260408083206001600160a01b038516845290915290205460ff166109c05760405162461bcd60e51b81526020600482015260116024820152702637b1b5b2b9103737ba103337bab7321760791b604482015260640161018a565b3360009081526001602090815260408083206001600160a01b0394909416835292905220805460ff19169055565b600260005403610a1157604051633ee5aeb560e01b815260040160405180910390fd5b6002600055565b6000826001600160a01b0316826001600160a01b03161480610a5f57506001600160a01b0380841660009081526001602090815260408083209386168352929052205460ff165b90505b92915050565b80356001600160a01b0381168114610a7f57600080fd5b919050565b600060208284031215610a9657600080fd5b610a5f82610a68565b60008060408385031215610ab257600080fd5b610abb83610a68565b946020939093013593505050565b602080825282518282018190526000919060409081850190868401855b82811015610b2c57815180516001600160a01b03908116865287820151168786015285810151868601526060908101519085015260809093019290850190600101610ae6565b5091979650505050505050565b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b80820180821115610a6257610a62610b4f565b81810381811115610a6257610a62610b4f565b634e487b7160e01b600052603160045260246000fd5b600060018201610bb357610bb3610b4f565b506001019056fea26469706673582212209387d7b9427a362beadae5cd71e072c4081724113b172b9da0c739a796b765e264736f6c63430008140033",
+  "devdoc": {
+    "errors": {
+      "ReentrancyGuardReentrantCall()": [
+        {
+          "details": "Unauthorized reentrant call."
+        }
+      ]
+    },
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 10,
+        "contract": "contracts/TimedLockerV5.sol:TimedLockerV5",
+        "label": "_status",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 88,
+        "contract": "contracts/TimedLockerV5.sol:TimedLockerV5",
+        "label": "designatedLockers",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_mapping(t_address,t_bool))"
+      },
+      {
+        "astId": 94,
+        "contract": "contracts/TimedLockerV5.sol:TimedLockerV5",
+        "label": "lockedFundsByBeneficiary",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_address,t_array(t_struct(Lock)82_storage)dyn_storage)"
+      },
+      {
+        "astId": 100,
+        "contract": "contracts/TimedLockerV5.sol:TimedLockerV5",
+        "label": "lockedFundsByLocker",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_mapping(t_address,t_array(t_struct(Lock)82_storage)dyn_storage)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_struct(Lock)82_storage)dyn_storage": {
+        "base": "t_struct(Lock)82_storage",
+        "encoding": "dynamic_array",
+        "label": "struct TimedLockerV5.Lock[]",
+        "numberOfBytes": "32"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_address,t_array(t_struct(Lock)82_storage)dyn_storage)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => struct TimedLockerV5.Lock[])",
+        "numberOfBytes": "32",
+        "value": "t_array(t_struct(Lock)82_storage)dyn_storage"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(address => bool))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_address,t_bool)"
+      },
+      "t_struct(Lock)82_storage": {
+        "encoding": "inplace",
+        "label": "struct TimedLockerV5.Lock",
+        "members": [
+          {
+            "astId": 75,
+            "contract": "contracts/TimedLockerV5.sol:TimedLockerV5",
+            "label": "locker",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address"
+          },
+          {
+            "astId": 77,
+            "contract": "contracts/TimedLockerV5.sol:TimedLockerV5",
+            "label": "beneficiary",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_address"
+          },
+          {
+            "astId": 79,
+            "contract": "contracts/TimedLockerV5.sol:TimedLockerV5",
+            "label": "value",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 81,
+            "contract": "contracts/TimedLockerV5.sol:TimedLockerV5",
+            "label": "unlockTimestamp",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "128"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

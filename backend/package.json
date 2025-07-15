@@ -1,39 +1,27 @@
 {
-  "name": "timedlocker-backend",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "TimedLockerV5 smart contract backend",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "hardhat test",
-    "compile": "hardhat compile",
-    "setup": "node scripts/setup.js",
-    "preview": "hardhat run scripts/preview.js",
-    "deploy:ethereum": "hardhat run scripts/deploy.js --network ethereum",
-    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
-    "deploy:base": "hardhat run scripts/deploy.js --network base",
-    "deploy:optimism": "hardhat run scripts/deploy.js --network optimism",
-    "deploy:arbitrum": "hardhat run scripts/deploy.js --network arbitrum",
-    "preview:ethereum": "hardhat run scripts/preview.js --network ethereum",
-    "preview:sepolia": "hardhat run scripts/preview.js --network sepolia",
-    "preview:base": "hardhat run scripts/preview.js --network base",
-    "preview:optimism": "hardhat run scripts/preview.js --network optimism",
-    "preview:arbitrum": "hardhat run scripts/preview.js --network arbitrum",
-    "verify:ethereum": "hardhat run scripts/verify.js --network ethereum",
-    "verify:sepolia": "hardhat run scripts/verify.js --network sepolia",
-    "verify:base": "hardhat run scripts/verify.js --network base",
-    "verify:optimism": "hardhat run scripts/verify.js --network optimism",
-    "verify:arbitrum": "hardhat run scripts/verify.js --network arbitrum",
-    "manual-verify": "node scripts/manual-verify.js"
+    "deploy:mainnet": "hardhat deploy --network mainnet",
+    "deploy:sepolia": "hardhat deploy --network sepolia",
+    "deploy:base": "hardhat deploy --network base",
+    "deploy:arbitrum": "hardhat deploy --network arbitrum",
+    "deploy:optimism": "hardhat deploy --network optimism",
+    "deploy:polygon": "hardhat deploy --network polygon",
+    "flatten": "hardhat flatten ./contracts/TimedLockerV5.sol > ./verification/TimedLockerV5_flattened.sol && node post-flatten.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@openzeppelin/contracts": "^5.3.0"
-  },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^6.0.0",
+    "@openzeppelin/contracts": "^5.3.0",
     "dotenv": "^17.2.0",
-    "hardhat": "^2.25.0"
+    "ethers": "^6.15.0",
+    "hardhat": "^2.25.0",
+    "hardhat-deploy": "^1.0.4"
   }
 }

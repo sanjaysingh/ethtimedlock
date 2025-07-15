@@ -1,0 +1,17 @@
+# Deps
+/node_modules
+
+# Coverage
+/coverage
+/coverage.json
+
+# Hardhat
+/cache
+/artifacts
+
+# Env
+.env
+
+# Others
+*.log
+.DS_Store 
