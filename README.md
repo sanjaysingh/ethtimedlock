@@ -6,6 +6,14 @@ This project is a decentralized application (DApp) for locking Ether in a smart 
 
 The `TimedLockerV5` smart contract allows a user (a "locker") to deposit Ether on behalf of another user (a "beneficiary"). The funds are locked until a specific timestamp is reached, at which point the beneficiary can withdraw them. To prevent spam, beneficiaries must first designate which locker addresses are allowed to deposit funds for them.
 
+The client application provides a user-friendly interface for the following features:
+
+-   **Wallet Connection**: Connect to the DApp using a web3 wallet like MetaMask.
+-   **Add/Remove Designated Lockers**: Beneficiaries can manage a list of addresses that are permitted to lock funds for them.
+-   **Deposit Funds**: Lockers can deposit Ether for a beneficiary, specifying the amount and the unlock time.
+-   **Withdraw Funds**: Beneficiaries can withdraw any funds that have reached their unlock time.
+-   **View Locked Funds**: Users can see a list of all funds currently locked for their address.
+
 ## Backend (Smart Contract)
 
 The `backend` folder contains the Solidity smart contract and a Hardhat development environment for deploying it.
@@ -24,7 +32,7 @@ The `backend` folder contains the Solidity smart contract and a Hardhat developm
     ```bash
     cp env.template .env
     ```
-4.  Edit the `.env` file to add your deployer account's private key and RPC URLs for your desired networks.
+4.  Edit the `.env` file to add your deployer account's private key. Optionally update the RPC URLs for your desired networks if you don't like default ones specified in hardhat.config.js.
 
 ### Deploying the Contract
 
@@ -47,7 +55,20 @@ npm run deploy:arbitrum
 
 # Deploy to Optimism
 npm run deploy:optimism
+
+# Deploy to Polygon
+npm run deploy:polygon
 ```
+
+### Flattening the Contract for Verification
+
+To generate a single, flattened file for easier verification on block explorers, run the following command from the `backend` directory:
+
+```bash
+npm run flatten
+```
+
+This will create `TimedLockerV5_flattened.sol` in the `verification` directory.
 
 ## Frontend (Client)
 
